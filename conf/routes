@@ -5,4 +5,9 @@ GET     /poems                      controllers.HomeController.poems()
 
 GET     /contacts                   controllers.HomeController.contacts()
 
+GET     /projects                   controllers.HomeController.projects()
+
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
++ nocsrf
+POST    /projects                   controllers.HomeController.upload(request: Request)
