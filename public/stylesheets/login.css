@@ -1,0 +1,11 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+.container{
+    margin-top: 300px;
+    padding: 100px;
+    background-color: #787878;
+}

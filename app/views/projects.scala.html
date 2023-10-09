@@ -1,8 +1,5 @@
-@()
+@(session: String)
 
-@main("F1oating | Projects"){
-    <form action="/projects" method="post" enctype="multipart/form-data">
-        <input type="file" name="picture">
-        <input type="submit" value="Загрузить файл">
-    </form>
+@main("F1oating | Projects", session){
+
 }
