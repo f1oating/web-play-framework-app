@@ -1,0 +1,28 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Poem</title>
+    <link rel="stylesheet" media="screen" href="@routes.Assets.versioned("stylesheets/addpoem.css")">
+</head>
+<body>
+    <div class="window">
+        <div class="container">
+            <form action="/addpoem" method="POST">
+                <div class="form-group">
+                    <label for="poem_name">Название поэмы:</label>
+                    <input type="text" id="poem_name" name="poem_name" required>
+                </div>
+                <div class="form-group">
+                    <label for="poem_text">Текст поемы:</label>
+                    <textarea style="width: 375px; height: 475px;" id="poem_text" name="poem_text" required></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit">Добавить поэму</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>

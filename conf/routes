@@ -14,3 +14,7 @@ POST    /login                      controllers.LoginController.auth(req: Reques
 GET     /logout                     controllers.LoginController.logout(req: Request)
 
 GET     /assets/*file               controllers.Assets.versioned(path="/public", file: Asset)
+
+GET     /addpoem                    controllers.AddpoemController.addpoem(req: Request)
++ nocsrf
+POST    /addpoem                    controllers.AddpoemController.addPoemToDB(req: Request)

@@ -1,5 +1,7 @@
 @(session: String)
 
 @main("F1oating | Poems", session){
-
+    @if(session != null){
+        <a class="content-a" href="/addpoem">Добавить поемму</a>
+    }
 }

@@ -69,3 +69,14 @@ body{
 p{
     text-align: center;
 }
+.content-a{
+    text-decoration: none;
+    margin: 10px;
+    padding: 10px;
+    color: white;
+    background: grey;
+    display: inline-block;
+}
+.content-a:hover{
+    background: black;
+}
