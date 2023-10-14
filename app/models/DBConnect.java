@@ -28,6 +28,16 @@ public class DBConnect {
     }
 
     public Connection getConnection() {
+        try {
+            if (connection == null || connection.isClosed()) {
+                String jdbcUrl = "jdbc:mysql://localhost:3306/f1oating";
+                String username = "admin";
+                String password = "admin";
+                connection = DriverManager.getConnection(jdbcUrl, username, password);
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
         return connection;
     }
 

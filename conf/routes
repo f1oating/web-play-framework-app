@@ -18,3 +18,7 @@ GET     /assets/*file               controllers.Assets.versioned(path="/public",
 GET     /addpoem                    controllers.AddpoemController.addpoem(req: Request)
 + nocsrf
 POST    /addpoem                    controllers.AddpoemController.addPoemToDB(req: Request)
+
+GET     /updatepoem/:id             controllers.UpdatepoemController.updatepoem(req: Request, id: Integer)
++ nocsrf
+POST    /updatepoem/:id             controllers.UpdatepoemController.updatePoemToDB(req: Request, id: Integer)
