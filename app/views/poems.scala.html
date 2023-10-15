@@ -1,7 +1,16 @@
-@(session: String)
+@(session: String, poem_names: List[String], poem_dates: List[String], ids: List[Integer])
 
 @main("F1oating | Poems", session){
     @if(session != null){
         <a class="content-a" href="/addpoem">Добавить поемму</a>
+    }
+
+    @for(poemIndex <- 0 until poem_names.length) {
+
+        <div style="height: 40; margin: 10px; padding: 10px; background: #353535; display: flex; justify-content: space-between;">
+            <a class="a-poem" style="text-decoration: none; color: #979797; padding-top: 15px; padding-left: 10px; font-size: 1.2em; padding-right: 10px;" href="/poem/@ids(poemIndex)">@poem_names(poemIndex)</a>
+            <p style="color: #979797; padding-right: 10px;">@poem_dates(poemIndex)</p>
+        </div>
+
     }
 }

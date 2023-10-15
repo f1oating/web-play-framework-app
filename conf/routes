@@ -22,3 +22,5 @@ POST    /addpoem                    controllers.AddpoemController.addPoemToDB(re
 GET     /updatepoem/:id             controllers.UpdatepoemController.updatepoem(req: Request, id: Integer)
 + nocsrf
 POST    /updatepoem/:id             controllers.UpdatepoemController.updatePoemToDB(req: Request, id: Integer)
+
+GET     /poem/:id                   controllers.PoemController.poem(req: Request, id: Integer)

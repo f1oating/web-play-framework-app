@@ -1,0 +1,19 @@
+@(session: String, poem_name: String, poem_text: String, poem_date: String, id: Integer)
+
+@main("F1oating | Contacts", session){
+<div class="poem-wrapper">
+    <div class="poem-container">
+        <div class="poem">
+            <h1 class="poem-h1">@poem_name</h1>
+            <p class="poem-text">@poem_text</p>
+            <p class="poem-date">@poem_date</p>
+        </div>
+        @if(session != null){
+        <div class="poem-buttons">
+            <a class="poem-change" href="/updatepoem/@id">Изменить</a>
+            <a class="poem-delete" href="/poem/@id">Удалить</a>
+        </div>
+        }
+    </div>
+</div>
+}
