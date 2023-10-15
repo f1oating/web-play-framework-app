@@ -24,3 +24,5 @@ GET     /updatepoem/:id             controllers.UpdatepoemController.updatepoem(
 POST    /updatepoem/:id             controllers.UpdatepoemController.updatePoemToDB(req: Request, id: Integer)
 
 GET     /poem/:id                   controllers.PoemController.poem(req: Request, id: Integer)
+
+GET     /delete/:id                 controllers.DeletepoemController.deletepoem(req: Request, id: Integer)
