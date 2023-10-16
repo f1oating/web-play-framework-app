@@ -124,3 +124,15 @@ p{
     width: 40%;
     padding-top: 20px;
 }
+.home-content{
+    display: inline-block;
+}
+.home-content p{
+    text-align: left;
+    color: white;
+}
+.home-content h1{
+    text-align: left;
+    color: white;
+}
+

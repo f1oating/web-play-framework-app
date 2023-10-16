@@ -5,8 +5,6 @@ GET     /poems                      controllers.PoemsController.poems(req: Reque
 
 GET     /contacts                   controllers.ContactsController.contacts(req: Request)
 
-GET     /projects                   controllers.ProjectsController.projects(req: Request)
-
 GET     /login                      controllers.LoginController.login()
 + nocsrf
 POST    /login                      controllers.LoginController.auth(req: Request)

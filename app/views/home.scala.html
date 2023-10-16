@@ -1,4 +1,32 @@
 @(session: String)
 @main("F1oating | Home", session){
-
+    <div class="home-content">
+        <p>Это проект - Дмитрия Торонченко. Псевдоним - f1oating</p><br>
+        <p>Проект - веб приложение для отработки и презентации навыков Java, MySQL, SQL, JDBC, Play Framework,
+            Web, HTTP, Scala, HTML, CSS. Отработка и отлаживания в памяти выше описаных технологий и языков.</p><br>
+        <h1>Функция Log in, Log out</h1>
+        <img src="@routes.Assets.versioned("images/Screenshot_4.jpg")"><br><img src="@routes.Assets.versioned("images/Screenshot_9.jpg")"><br>
+        <p>С помощью функции Log in пользователь который значет пароль и логин может войти в сессию, которая в дальнейшем будет позволять
+            пользователю изменять, удалять и добавлять поеммы.</p><br>
+        <img src="@routes.Assets.versioned("images/Screenshot_10.jpg")"><br>
+        <p>Примеры до и после захода в сессию:</p><br>
+        <p>При заходе в сессию вы можете добавлять поемы</p><br>
+        <img style="width: 300px; height: 300px;" src="@routes.Assets.versioned("images/Screenshot_12.jpg")"><br>
+        <img style="width: 300px; height: 300px;" src="@routes.Assets.versioned("images/homeimg1.jpg")"><br>
+        <p>При заходе в сессию вы можете изменять или удалять поемы</p>
+        <img style="width: 300px; height: 300px;" src="@routes.Assets.versioned("images/Screenshot_11.jpg")"><br>
+        <img style="width: 300px; height: 300px;" src="@routes.Assets.versioned("images/Screenshot_6.jpg")"><br>
+        <p>Как же выглядит изменение поемы ? При нажатии на кнопку изменить вы переходите на страницу изменения</p><br>
+        <img src="@routes.Assets.versioned("images/Screenshot_8.jpg")"><br>
+        <p>На ней вы можете ввести нужные вам данные и сохранить изменения нажав на кнопку изменить. Обратите внимание
+            на странице присутствует текст по умолчанию выбраной вам поемы, чтоб вы могли понимать что именно вы изменяете.</p><br>
+        <p>Кнопка удалить удаляет поему и делает редирект на главную страницу</p><br>
+        <img src="@routes.Assets.versioned("images/Screenshot_7.jpg")"><br>
+        <p>На все операции стоит проверка на наличие сессии, тобеж даже если вы не видите кнопку и знаете какой нужно сделать POST запрос
+            на URL , вы не сможете изменить данные так как вы не состоите в сессии.</p><br>
+        <p>При обновлении, удалении , изменении поем, а так же когда вы открываете URL poems, сервер берет данные из MySQl и распоряжаеться ими
+            в зависимости от вашего запроса.</p><br>
+        <p>Все подробности о проекте вы можете найти перейдя по <a href="https://github.com/f1oating/web-play-framework-app">этой</a> ссылке
+            на GitHub. Проект имеет полностью открытый исходный код.</p><br>
+    </div>
 }
